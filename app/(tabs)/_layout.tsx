@@ -13,11 +13,10 @@ export default function TabLayout() {
 
   return (
     <>
-    <CustomHeader/>  
+    {/* <CustomHeader/>   */}
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        tabBarInactiveTintColor: Colors[colorScheme ?? 'dark'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
@@ -30,17 +29,17 @@ export default function TabLayout() {
         }),
       }}>
       <Tabs.Screen
-        name="home"
+        name="Home"
         options={{
           title: '',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="recognition"
+        name="explore"
         options={{
-          title: '',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="ranking-star" color={color} />,
+          title: 'Explore',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
     </Tabs>

@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function HallOfFameScreen() {
+export default function KingdomScreen() {
   return (
     <View style={styles.container}>
-      <Text>Hall of Fame Announcements</Text>
+      <Text>Hall Of Fame Announcements</Text>
       {/* Your clan content here */}
     </View>
   );

@@ -5,7 +5,6 @@
 
 const tintColorLight = '#cc1e1e';
 const tintColorDark = '#fff';
-const tabIconDefault = '#687076';
 
 export const Colors = {
 

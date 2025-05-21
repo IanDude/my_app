@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function RankingScreen() {
+export default function KingdomScreen() {
   return (
     <View style={styles.container}>
       <Text>Ranking Announcements</Text>
