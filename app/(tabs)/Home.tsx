@@ -9,7 +9,9 @@ export default function HomeTab() {
     <TopTabs.Navigator
       screenOptions={{
         tabBarIndicatorStyle: { backgroundColor: 'red' }, // customize as needed
-        tabBarLabelStyle: { fontWeight: 'bold' },
+        tabBarLabelStyle: { fontWeight: 'bold'}, // customize as needed
+        tabBarStyle: { backgroundColor: '#FFFFFF'}, // customize as needed
+        tabBarActiveTintColor: '#000000', // customize as needed
       }}
     >
       <TopTabs.Screen name="Clan" component={ClanScreen} />

@@ -11,10 +11,10 @@ export const Colors = {
   light: {
     text: '#11181C',
     background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
+    tint: '#cc1e1e',
+    icon: '#cc1e1e',
     tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+    tabIconSelected: '#000000',
   },
   dark: {
     text: '#ECEDEE',

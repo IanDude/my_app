@@ -10,6 +10,8 @@ export default function RecognitionTab() {
       screenOptions={{
         tabBarIndicatorStyle: { backgroundColor: 'red' }, // customize as needed
         tabBarLabelStyle: { fontWeight: 'bold' },
+        tabBarStyle: { backgroundColor: '#FFFFFF' }, // customize as needed
+        tabBarActiveTintColor: '#000000', // customize as needed
       }}
     >
       <TopTabs.Screen name="Ranking" component={RankingScreen} />
