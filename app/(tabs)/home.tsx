@@ -6,6 +6,7 @@ const TopTabs = createMaterialTopTabNavigator();
 
 export default function HomeTab() {
   return (
+    
     <TopTabs.Navigator
       screenOptions={{
         tabBarIndicatorStyle: { backgroundColor: 'red' }, // customize as needed
@@ -15,5 +16,7 @@ export default function HomeTab() {
       <TopTabs.Screen name="Clan" component={ClanScreen} />
       <TopTabs.Screen name="Kingdom" component={KingdomScreen} />
     </TopTabs.Navigator>
+    
+    
   );
 }
