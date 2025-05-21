@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
-import CustomHeader from '@/components/CustomHeader';
+
 import { HapticTab } from '@/components/HapticTab';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
@@ -12,11 +12,10 @@ export default function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
-    <>
-    {/* <CustomHeader/>   */}
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarInactiveTintColor: Colors[colorScheme ?? 'dark'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
@@ -29,21 +28,19 @@ export default function TabLayout() {
         }),
       }}>
       <Tabs.Screen
-        name="Home"
+        name="home"
         options={{
           title: '',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="recognition"
         options={{
           title: '',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="ranking-star" color={color} />,
         }}
       />
     </Tabs>
-    </>
-    
   );
 }
